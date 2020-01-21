@@ -1,6 +1,6 @@
 
 # Partition
-Library for chunk list of integers to smaller lists with the indicated size.
+Library for chunk list of objects to smaller lists with the indicated size.
 
 # Use
 ```
