@@ -14,7 +14,7 @@ import org.junit.rules.ExpectedException;
 /**
  * Unit test for simple App.
  */
-public class AppTest
+public class PartitionTest
 {
 	@Rule
 	public final ExpectedException exception = ExpectedException.none();
