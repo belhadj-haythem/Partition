@@ -28,7 +28,7 @@ public class PartitionTest
 		
 		final Integer[] liste = new Integer[]{1,2,3,4,5};
 		result = Partition.chunk(Arrays.asList(liste), 2);
-		assertNotNull(result);
+		assertNotNull(result); 
 		assertEquals(result.size(), 3);
 		assertEquals(result.get(2).size(), 1);
 	}

@@ -9,17 +9,17 @@ import org.apache.log4j.Logger;
 public class Partition {
 	
 	public final static Logger LOGGER = Logger.getLogger(Partition.class);
-	public static List<List<Integer>> chunk(List<Integer> liste, int taille) {
+	public static <T> List<List<T>> chunk(List<T> liste, int taille) {
 		if (liste == null) {
 			LOGGER.debug("Your list is empty, please provide another one.");
 			return Collections.emptyList();
 		}
 		if (taille <= 0) {
 			LOGGER.debug("Length provided could not be resolved.");
-			return Collections.emptyList();
+			return Collections.emptyList(); 
 		}
 		int numOfChunks = (int)Math.ceil((double)liste.size() / taille);
-		List<List<Integer>> output = new ArrayList<List<Integer>>();
+		List<List<T>> output = new ArrayList<List<T>>();
         for(int i = 0; i < numOfChunks; ++i) {
         	int start = i * taille;
             int end = Math.min(start + taille, liste.size());
