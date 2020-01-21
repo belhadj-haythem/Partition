@@ -8,13 +8,13 @@ import org.apache.log4j.Logger;
 
 public class Partition {
 	
-	public final static Logger LOGGER = Logger.getLogger(Partition.class);
+	private final static Logger LOGGER = Logger.getLogger(Partition.class);
 	public static <T> List<List<T>> chunk(List<T> liste, int taille) {
 		if (liste == null) {
 			LOGGER.debug("Your list is empty, please provide another one.");
 			return Collections.emptyList();
 		}
-		if (taille <= 0) {
+		if (taille <= 0) { 
 			LOGGER.debug("Length provided could not be resolved.");
 			return Collections.emptyList(); 
 		}
