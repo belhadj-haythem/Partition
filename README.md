@@ -7,7 +7,7 @@ Library for chunk list of integers to smaller lists with the indicated size.
 <dependency>
   <groupId>com.github.belhadj-haythem</groupId>
   <artifactId>partition</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.1</version>
 </dependency>
 ```
 
