@@ -7,13 +7,50 @@
 	<artifactId>partition</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-	<name>partition</name>
-	<url>http://maven.apache.org</url>
+	<name>Partition</name>
+	<description>Chunk integer list to smaller ones</description>
+	<url>http://github.com/belhadj-haythem/partition</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Belhadj Haythem</name>
+			<email>haythem0belhadj@gmail.com</email>
+			<organization>com.github.belhadj-haythem</organization>
+			<organizationUrl>http://github.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/belhadj-haythem/partition.git</connection>
+		<developerConnection>scm:git:ssh://github.com:belhadj-haythem/partition.git</developerConnection>
+		<url>http://github.com/simpligility/ossrh-demo/tree/master</url>
+	</scm>
+
 
 	<dependencies>
 		<dependency>
